@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = utf-8>
+        <title>Near Me</title>
+        <link rel=stylesheet href={{url_for('static', filename='styles/nearme_error.css')}}>
+    </head>
+    <body>
+        <h>The UFO Website</h>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="stats">Statistics</a></li>
+            <li><a href="nearme">Near Me</a></li>
+            <li><a href="advancedsearch">Advanced Search</a></li>
+        </ul>
+        
+        <p>Enter a city name to see a list of nearby UFO sightings! Ex: San Jose, Houston, New York</p>
+        
+        <form>
+            <input type="text" autocomplete="off" id="searchbar" name="search" placeholder="City Name..." />
+        </form>
+        
+        <p1>City was not found in our database. Please try a different search.</p1>
+        
+    </body>
+</html>

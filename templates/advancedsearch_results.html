@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = utf-8>
+        <title>Advanced Search</title>
+        <link rel=stylesheet href={{url_for('static', filename='styles/advancedsearch_results.css')}}>
+    </head>
+    <body>
+        <h>The UFO Website</h>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="stats">Statistics</a></li>
+            <li><a href="nearme">Near Me</a></li>
+            <li><a href="advancedsearch">Advanced Search</a></li>
+        </ul>
+        
+        <h1>Here are the sightings that match your search criteria.</h1>
+
+        <table style = "width: 100%">
+            <tr>
+                <th>Event Time</th>
+                <th>Event Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Summary</th>
+                <th>Event URL</th>
+            </tr>
+            
+            {% for element in results %}
+            <tr>
+                <td>{{ element[0] }}</td>
+                <td>{{ element[1] }}</td>
+                <td>{{ element[2] }}</td>
+                <td>{{ element[3] }}</td>
+                <td>{{ element[4] }}</td>
+                <td>{{ element[5] }}</td>
+                <td>{{ element[6] }}</td>
+                <td>{{ element[7] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+        
+    </body>
+</html>

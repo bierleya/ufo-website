@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = utf-8>
+        <title>Advanced Search</title>
+        <link rel=stylesheet href={{url_for('static', filename='styles/advancedsearch_error.css')}}>
+    </head>
+    <body>
+        <h>The UFO Website</h>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="stats">Statistics</a></li>
+            <li><a href="nearme">Near Me</a></li>
+            <li><a href="advancedsearch">Advanced Search</a></li>
+        </ul>
+        
+        <p>Fill out any combination of the fields for data on specific sightings.</p>
+        <p1>No results. Please try again.</p1>
+        <form method="get" id="advForm">
+            <label for="year">Year</label>
+            <input type="text" autocomplete="off" name="year" placeholder="Enter a year...">
+                   
+            <label for="shape">Shape</label>
+            <input type="text" autocomplete="off" name="shape" placeholder="Enter a shape (ie. cirlce, disk)...">
+            
+            <label for="city">City</label>
+            <input type="text" autocomplete="off" name="city" placeholder="Enter a city name...">
+            
+            <label for="state">State</label>
+            <input type="text" autocomplete="off" name="state" placeholder="Enter a state (ie. CA, MN)...">
+            
+            <label for="duration">Duration</label>
+            <input type="text" autocomplete="off" name="duration" placeholder="Enter a duration (ie. 5 minutes, 10 seconds)...">
+
+            <label for="sort_by">Sort By</label>
+            <select name="sort_by">
+                <option value="event_time">Date</option>
+                <option value="shape">Shape</option>
+                <option value="city">City</option>
+                <option value="state">State</option>
+            </select>
+            
+            <input type="submit" label="Submit" value="Get Results">
+            
+        </form>
+    </body>
+</html>
