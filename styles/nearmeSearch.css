@@ -1,0 +1,74 @@
+body {
+    background-image: url(https://www.yesmagazine.org/planet/going-dark-to-reconnect-to-the-night-sky-light-pollution-20190228/night-sky.jpg/image);
+    text-align: center;
+    background-size: cover;
+}
+
+h {
+    color: white;
+    font-size: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;   
+    width: 24.91%
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: aqua;
+}
+
+li:nth-child(3) {
+    background-color: lightgrey;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type=text] {
+    border-radius: 150px;
+    float: none;
+    padding: 6px;
+    border: 2px solid red;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+caption {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    color: black;
+    background-color: aliceblue;
+    
+}

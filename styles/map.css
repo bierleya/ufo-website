@@ -1,0 +1,39 @@
+body {
+    background-image: url(https://cdn.spacetelescope.org/archives/images/wallpaper2/heic1112a.jpg);
+    text-align: center
+}
+
+h {
+    color: white;
+    font-size: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;   
+    width: 24.91%
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: aqua;
+}
+
+li:nth-child(2) {
+    background-color: lightgrey;
+}
